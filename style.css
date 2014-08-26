@@ -574,7 +574,10 @@ input[type="submit"]:active {
 #site-header img,
 .widget img,
 .wp-caption {
-	max-width: 100%;
+	max-width: 25%;
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
 }
 
 /**
@@ -1039,7 +1042,6 @@ span + .edit-link:before,
  */
 
 .content-area {
-	padding-top: 48px;
 }
 
 .hentry {
@@ -2137,7 +2139,7 @@ a.post-thumbnail:hover {
 .widget h4,
 .widget h5,
 .widget h6 {
-	margin: 24px 0 12px;
+	margin: 0;
 }
 
 .widget h1 {
@@ -2148,6 +2150,8 @@ a.post-thumbnail:hover {
 .widget h2 {
 	font-size: 20px;
 	line-height: 1.2;
+	display: inline-block;
+	width: 60%;
 }
 
 .widget h3 {
@@ -3558,7 +3562,6 @@ a.post-thumbnail:hover {
 @media screen and (min-width: 846px) {
 	.content-area,
 	.content-sidebar {
-		padding-top: 72px;
 	}
 
 	.site-content .has-post-thumbnail .entry-header {
@@ -3625,7 +3628,9 @@ a.post-thumbnail:hover {
 	.content-sidebar {
 		margin-left: -29.04761904%;
 		width: 29.04761904%;
-	}
+	
+		background-color: ghostwhite;
+}
 
 	.site:before {
 		
