@@ -11,7 +11,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php twentyfourteen_post_thumbnail(); ?>
+	<?php twentyfourteen_post_thumbnail('twentyfourteen-full-width', 1038, 576, true); ?>
 
 	<header class="entry-header">
 		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
@@ -62,5 +62,5 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
-	<?php the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' ); ?>
+	<footer class="entry-meta"><span class="tag-links"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="tag">Portada</a></span></footer>
 </article><!-- #post-## -->

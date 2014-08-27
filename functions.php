@@ -424,7 +424,8 @@ function twentyfourteen_body_classes( $classes ) {
 	if ( ( ! is_active_sidebar( 'sidebar-2' ) )
 		|| is_page_template( 'page-templates/full-width.php' )
 		|| is_page_template( 'page-templates/contributors.php' )
-		|| is_attachment() ) {
+		|| is_attachment()
+		|| is_category ()) {
 		$classes[] = 'full-width';
 	}
 
