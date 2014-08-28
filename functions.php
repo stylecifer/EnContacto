@@ -75,7 +75,7 @@ function twentyfourteen_setup() {
 
 	// Enable support for Post Thumbnails, and declare two sizes.
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 672, 372, true );
+	set_post_thumbnail_size( 672, 372, false );
 	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
 
 	// This theme uses wp_nav_menu() in two locations.
@@ -194,15 +194,15 @@ function twentyfourteen_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
-	register_sidebar( array(
-		'name'          => __( 'Nav Post', 'twentyfourteen' ),
-		'id'            => 'sidebar-4',
-		'description'   => __( 'To create navegations post bar.', 'twentyfourteen' ),
-		'before_widget' => '<div class="nav-menu">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<span class="widget-title">',
-		'after_title'   => '</span>',
-	) );
+	//register_sidebar( array(
+	//	'name'          => __( 'Nav Post', 'twentyfourteen' ),
+	//	'id'            => 'sidebar-4',
+	//	'description'   => __( 'To create navegations post bar.', 'twentyfourteen' ),
+	//	'before_widget' => '<div class="nav-menu">',
+	//	'after_widget'  => '</div>',
+	//	'before_title'  => '<span class="widget-title">',
+	//	'after_title'   => '</span>',
+	//) );
 }
 add_action( 'widgets_init', 'twentyfourteen_widgets_init' );
 
