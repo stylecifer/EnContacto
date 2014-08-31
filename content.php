@@ -62,5 +62,6 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
-	<?php the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' ); ?>
+	<!--<?php the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' ); ?> Esto es reemplazado por la etiqueta que escribo a continuación...
+	...--><footer class="entry-meta"><span class="tag-links"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="tag">Portada</a></span></footer><!--la cual imprime un boton con el estilo visual de la de la clase etiqueta --> 
 </article><!-- #post-## -->
